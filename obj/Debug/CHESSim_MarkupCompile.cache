@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\App.xaml
-3-1390459734
+5-929950992
 
-14717654947
+17255922142
 15-169314185
-Anmeldung.xaml;GameWindow.xaml;LobbyAuswahl.xaml;
+Anmeldung.xaml;CreateLobby.xaml;GameWindow.xaml;InLobby.xaml;LobbyAuswahl.xaml;
 
 False
 

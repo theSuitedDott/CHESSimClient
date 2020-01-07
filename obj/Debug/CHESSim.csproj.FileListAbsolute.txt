@@ -20,3 +20,7 @@ C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\De
 C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\Debug\CHESSim.csproj.GenerateResource.cache
 C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\Debug\CHESSim.csproj.CoreCompileInputs.cache
 C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\Debug\CHESSim.csproj.CopyComplete
+C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\Debug\CreateLobby.g.cs
+C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\Debug\CreateLobby.baml
+C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\Debug\InLobby.g.cs
+C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\Debug\InLobby.baml

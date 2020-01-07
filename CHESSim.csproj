@@ -66,7 +66,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CreateLobby.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GameWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InLobby.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -83,10 +91,17 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ChessPiece.cs" />
+    <Compile Include="CreateLobby.xaml.cs">
+      <DependentUpon>CreateLobby.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLobbyViewModel.cs" />
     <Compile Include="GameWindow.xaml.cs">
       <DependentUpon>GameWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="IClosable.cs" />
+    <Compile Include="InLobby.xaml.cs">
+      <DependentUpon>InLobby.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LobbyAuswahl.xaml.cs">
       <DependentUpon>LobbyAuswahl.xaml</DependentUpon>
       <SubType>Code</SubType>

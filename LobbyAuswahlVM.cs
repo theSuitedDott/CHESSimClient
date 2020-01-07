@@ -6,6 +6,8 @@ namespace CHESSim
 {
 	public class LobbyAuswahlVM : ViewModelBase
 	{
+		CreateLobby clView;
+		CreateLobbyViewModel clVM;
 		public RelayCommand CloseBTN { get; set; }
 		public RelayCommand LobbyBeitreten { get; set; }
 		public RelayCommand LobbyErstellen { get; set; }
@@ -37,12 +39,21 @@ namespace CHESSim
 
 		private void JoinLoby()
 		{
-			//Todo
+			
 		}
 
 		private void CreateLobby()
 		{
-			//Todo
+			clView = new CreateLobby();
+			clVM = new CreateLobbyViewModel();
+			clVM.ClosePage = new RelayCommand(CloseWindow);
+			clView.DataContext = clVM;
+			clView.Show();
+		}
+
+		private void CloseWindow()
+		{
+			clView.Close();
 		}
 
 		private void CloseApplicaiton()

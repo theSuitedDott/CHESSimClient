@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CHESSim"
         mc:Ignorable="d"
-        Title="Anmeldung" Height="450" Width="800">
+        Title="Anmeldung" Height="200" Width="800">
     <Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition/>

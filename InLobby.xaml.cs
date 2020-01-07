@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CHESSim
 {
     /// <summary>
-    /// Interaction logic for CreateLobby.xaml
+    /// Interaction logic for InLobby.xaml
     /// </summary>
-    public partial class CreateLobby : Window
+    public partial class InLobby : Window
     {
-        public CreateLobby()
+        public InLobby()
         {
             InitializeComponent();
         }
