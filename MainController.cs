@@ -12,15 +12,18 @@ namespace CHESSim
 		LobbyAuswahl lobbyView;
 		Anmeldung anmeldungView;
 		AnmeldungVM anmeldungVM;
+		public static string USERNAME;
 
 		public MainController()
 		{
 			lobbyView = new LobbyAuswahl();
 			lobbyVM = new LobbyAuswahlVM();
 			anmeldungView = new Anmeldung();
-			anmeldungVM = new AnmeldungVM();
-			anmeldungVM.AnmeldeBTN = new x.common.WPF.Commands.RelayCommand(MeldeAnAlsGast);
-			anmeldungVM.GastBTN = new x.common.WPF.Commands.RelayCommand(MeldeAnAlsGast);
+			anmeldungVM = new AnmeldungVM
+			{
+				AnmeldeBTN = new x.common.WPF.Commands.RelayCommand(MeldeAnAlsGast),
+				GastBTN = new x.common.WPF.Commands.RelayCommand(MeldeAnAlsGast)
+			};
 		}
 
 		public void ProgrammStart()
@@ -35,7 +38,8 @@ namespace CHESSim
 			anmeldungView.Close();
 			lobbyView.DataContext = lobbyVM;
 			lobbyView.Show();
-		}
+			USERNAME = anmeldungVM.UserName;
+	}
 
 	}
 }

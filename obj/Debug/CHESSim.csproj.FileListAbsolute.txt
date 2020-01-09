@@ -24,3 +24,5 @@ C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\De
 C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\Debug\CreateLobby.baml
 C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\Debug\InLobby.g.cs
 C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\obj\Debug\InLobby.baml
+C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sarmpinosk\Documents\Visual Studio 2017\Projects\CHESSim\CHESSim\bin\Debug\Newtonsoft.Json.xml

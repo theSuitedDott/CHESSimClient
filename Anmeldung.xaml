@@ -20,8 +20,8 @@
 		</Grid.ColumnDefinitions>
 		<Label Height="50" Content="Username: " HorizontalContentAlignment="Right" FontSize="20"/>
 		<Label Height="50" Grid.Row="1" Content="Passwort: " FontSize="20" HorizontalContentAlignment="Right"/>
-		<TextBox Grid.Column="1" Grid.ColumnSpan="2" Height="50" TextAlignment="Center" Text="{Binding UserName}"/>
-		<TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Height="50"/>
+		<TextBox Grid.Column="1" Grid.ColumnSpan="2" Height="35" TextAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Text="{Binding UserName}"/>
+		<TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Height="35" VerticalContentAlignment="Center" FontSize="20"/>
 		<Button Grid.Row="2" Grid.Column="1" Content="Anmelden" Width="150" Height="50" Command="{Binding AnmeldeBTN}"/>
 		<Button Grid.Row="2" Grid.Column="2" Content="Gast Spielen" Width="150" Height="50" Command="{Binding GastBTN}" />
 	</Grid>
