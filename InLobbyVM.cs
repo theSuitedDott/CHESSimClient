@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,8 +59,13 @@ namespace CHESSim
 
 		private void OpenSessionGame()
 		{
-			gameWindowView.DataContext = gameWindowVM;
-			gameWindowView.Show();
+			Chat chat = new Chat();
+			ChatVM chatVM = new ChatVM();
+			StockChessCS.Programm nw = new StockChessCS.Programm();
+			string yes = nw.returnPath();
+			Process.Start(yes + "\\StockChessCS.exe");
+			chat.DataContext = chatVM;
+			chat.Show();
 			LeaveThisLobby();
 		}
 	}

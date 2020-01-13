@@ -177,12 +177,6 @@
 			</ItemsControl>
 		</Viewbox>
 		<Button Grid.Column="1" Grid.Row="2" Command="{Binding LeaveGame}" Content="Spiel Verlassen" Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10"/>
-		<ListBox  BorderBrush="Beige" Grid.RowSpan="2" Grid.Column="1" ItemsSource="{Binding ChatNachrichtenLB}"></ListBox>
-		<TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" BorderBrush="Beige" Text="{Binding ChatNachricht}" Margin="67,0,0,0">
-			<TextBox.InputBindings>
-				<KeyBinding Key="Enter" Command="{Binding SendMessage}"/>
-			</TextBox.InputBindings>
-		</TextBox>
-		<Label Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Nachricht: "></Label>
+
 	</Grid>
 </Window>

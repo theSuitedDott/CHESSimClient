@@ -69,6 +69,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Chat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CreateLobby.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -93,6 +97,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Chat.xaml.cs">
+      <DependentUpon>Chat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChatVM.cs" />
     <Compile Include="ChessPiece.cs" />
     <Compile Include="CreateLobby.xaml.cs">
       <DependentUpon>CreateLobby.xaml</DependentUpon>
@@ -143,6 +151,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="StockChess\StockChessCS\StockChessCS.csproj">
+      <Project>{d703687b-258c-42f7-8465-48e7af54d159}</Project>
+      <Name>StockChessCS</Name>
+    </ProjectReference>
+    <ProjectReference Include="StockChess\StockChess\StockChess.vbproj">
+      <Project>{f290d058-1be1-4b05-bdb7-6e8f369518cc}</Project>
+      <Name>StockChess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
