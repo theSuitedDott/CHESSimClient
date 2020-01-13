@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Windows;
 using x.common.WPF.Commands;
 using x.common.WPF.ViewModel;
 
@@ -11,6 +13,9 @@ namespace CHESSim
 		public RelayCommand CloseBTN { get; set; }
 		public RelayCommand LobbyBeitreten { get; set; }
 		public RelayCommand LobbyErstellen { get; set; }
+		public RelayCommand FindSessions { get; set; }
+		public ObservableCollection<string> LobbyList {get;set;}
+
 		private string _userName;
 		private bool _userRegistered;
 
@@ -35,11 +40,26 @@ namespace CHESSim
 			CloseBTN = new RelayCommand(CloseApplicaiton);
 			LobbyBeitreten = new RelayCommand(JoinLoby);
 			LobbyErstellen = new RelayCommand(CreateLobby);
+			FindSessions = new RelayCommand(FindeSession);
+			LobbyList = new ObservableCollection<string>();
+		}
+
+		private void FindeSession()
+		{
+			//RequestServerAboutSessions
+			if (true)
+			{
+				if (!LobbyList.Contains("Keine erstellten Lobbys"))
+				{
+					LobbyList.Add("Keine erstellten Lobbys");
+				}
+			}
 		}
 
 		private void JoinLoby()
 		{
-			
+			//SendServer Request who is in Lobby
+			//Has Password?
 		}
 
 		private void CreateLobby()

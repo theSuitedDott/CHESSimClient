@@ -47,6 +47,7 @@ namespace CHESSim
 			SendLobbyRequest();
 			if (httpResponse.StatusCode == HttpStatusCode.OK)
 			{
+				inLobbyView.DataContext = inLobbyVM;
 				inLobbyView.Show();
 			}
 			else

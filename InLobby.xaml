@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CHESSim"
         mc:Ignorable="d"
-        Title="InLobby" Height="600" Width="400">
+        Title="InLobby" Height="600" Width="600">
     <Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition/>
@@ -23,25 +23,15 @@
 			<RowDefinition/>
 		</Grid.RowDefinitions>
 		<Label Content="Schwarz" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></Label>
-		<ListBox Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="10" ItemsSource="{Binding Players}" SelectedItem="{Binding SelectedPlayer}">
-			<ListBox.ItemTemplate>
-				<DataTemplate>
-					<TextBlock Text="{Binding UserName}">
-						<TextBlock.InputBindings>
-							<MouseBinding Gesture="LeftDoubleClick" 
-									  Command="{Binding AddClickAsPlayer}"/>
-						</TextBlock.InputBindings>
-					</TextBlock>
-				</DataTemplate>
-			</ListBox.ItemTemplate>
-		</ListBox>
+		<ListBox Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="10" ItemsSource="{Binding AllBlackPlayer}"/>
 		<Label Content="Weiß" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="2"/>
 		<ListBox Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="2" Grid.RowSpan="2" Margin="10"/>
 		<Label Content="Zuschauer" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="4"/>
 		<ListBox Grid.Column="1" Grid.RowSpan="2" Grid.Row="4" Grid.ColumnSpan="3" Margin="10"/>
-		<Image Grid.Row="3" Source="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_white_king_T.png"/>
-		<Image Grid.Row="1" Source="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_black_king_T.png"/>
 		<Button Grid.Row="6" Grid.Column="3" Content="Lobby verlassen" Margin="10" Command="{Binding LeaveLobby}"/>
-		<Button Grid.Row="6" Grid.Column="1" Margin="10" Content="Ready" Command="{Binding StartGame}"/>
+		<Button Grid.Row="6" Grid.Column="1" Margin="10" Content="StartGame" Command="{Binding StartGame}"/>
+		<Button Grid.Row="3" Grid.Column="0" Content="Weiß beitreten" Margin="10" Command="{Binding JoinWhite}"/>
+		<Button Grid.Row="1" Grid.Column="0" Margin="10" Content="Schwarz beitreten" Command="{Binding JoinBlack}"/>
+		<Button Grid.Row="5" Grid.Column="0" Margin="10" Content="Zuschauen" Command="{Binding JoinWatcher}"/>
 	</Grid>
 </Window>

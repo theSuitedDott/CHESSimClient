@@ -18,7 +18,7 @@ namespace CHESSim
 	/// <summary>
 	/// Interaction logic for Anmeldung.xaml
 	/// </summary>
-	public partial class Anmeldung : Window, IClosable
+	public partial class Anmeldung : Window
 	{
 		public Anmeldung()
 		{

@@ -102,7 +102,7 @@
     <Compile Include="GameWindow.xaml.cs">
       <DependentUpon>GameWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="IClosable.cs" />
+    <Compile Include="GameWindowVM.cs" />
     <Compile Include="InLobby.xaml.cs">
       <DependentUpon>InLobby.xaml</DependentUpon>
     </Compile>
@@ -117,6 +117,7 @@
     <Compile Include="Classes\Player.cs" />
     <Compile Include="LobbyAuswahlVM.cs" />
     <Compile Include="MainController.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
